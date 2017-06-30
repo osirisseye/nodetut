@@ -14,5 +14,7 @@ fs.readFile('readme.txt','utf-8',function(err, data){
 });
 
 			
-
+console.log('I will be logged first because other function is async!')
+//We learnt how to read/log file contents asynchronously
+//this method DOES NOT block rest of the code form executing
 
