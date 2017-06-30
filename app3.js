@@ -1,4 +1,4 @@
-// Reading and writing contents of a file, new module 'fs'!
+// Reading and writing ASYNCHRONOULSY!
 
 //First import new module;
 var fs = require('fs');
