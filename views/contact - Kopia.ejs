@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{background:skyblue; font-family:verdana; color: #fff; padding:30px;}
+			h1{font-size:48px;text-transform: uppercase;letter-spacing: 2px;text-align: center;}
+			p{font-size: 16px; text-align: center;}
+		</style>
+	</head>
+	<body>
+		<% include partials/nav.ejs %>
+		<h1>Contact Us!</h1>
+		<p>We are the coolest ninjas on the net - give us a shout!</p>
+		<!-- Very simple example of extracting data from query string (in appXX.js file) and using this data in our view render
+		<p>Department:<%= qs.dept %></p>
+		-->
+
+		<form id="contact-form">
+			<label for="who">Who do you want to contact?</label></br>
+			<input type="text" name="who" value="<%=qs.person %>"/></br>
+			<label for="department">Which department you want to contact?</label></br>
+			<input type="text" name="department" value="<%=qs.dept %>"/></br>
+			<label for="email">Your email</label></br>
+			<input type="email" name="email"/></br>
+			<input type="submit" value="submit" />
+		</form>
+	</body>
+
+
+</html>
